@@ -6,6 +6,16 @@ terraform {
       version = "~> 3.107.0"
     }
   }
+
+  cloud {
+    # The name of your Terraform Cloud organization.
+    organization = "SoftwareOne"
+
+    # The name of the Terraform Cloud workspace to store Terraform state files in.
+    workspaces {
+      name = "level-1-2-terraform-azurerm-caf-enterprise-scale"
+    }
+  }
 }
 
 provider "azurerm" {
@@ -30,7 +40,7 @@ module "enterprise_scale" {
   root_parent_id = data.azurerm_client_config.core.tenant_id
   root_id        = var.root_id
   root_name      = var.root_name
-  library_path   = "${path.root}/lib"
+  # library_path   = "${path.root}/lib"
 
   ### all bool possibilities ###
   deploy_core_landing_zones   = true  // deploy 386 resources
