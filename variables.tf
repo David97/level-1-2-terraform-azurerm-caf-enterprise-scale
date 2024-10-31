@@ -7,3 +7,4 @@ variable "root_name" {
   type    = string
   default = "SWO"
 }
+
