@@ -5,5 +5,5 @@ variable "root_id" {
 
 variable "root_name" {
   type    = string
-  default = "SWO Organization"
+  default = "SWO"
 }
