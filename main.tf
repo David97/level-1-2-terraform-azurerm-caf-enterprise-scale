@@ -49,7 +49,7 @@ module "enterprise_scale" {
   # deploy_sap_landing_zones    = false // no change
   # deploy_demo_landing_zones   = false // no change
 
-  # deploy_management_resources   = false // Tested -- Log Analytics workspaces -- cannot all apply
+  deploy_management_resources = false // Tested -- Log Analytics workspaces -- cannot all apply
   # deploy_diagnostics_for_mg     = false // Tested -- nothing deployed
   # deploy_identity_resources     = false // Tested -- nothing deployed
   # deploy_connectivity_resources = true  // Tested -- 77 private_dns_zone (98%), 1 resource group (1%), 1 azurerm_subscription_template_deployment (1%)
