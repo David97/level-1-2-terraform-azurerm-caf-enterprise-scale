@@ -10,7 +10,7 @@ variable "root_name" {
 
 variable "subscription_id_connectivity" {
   description = "The connectivity subscription"
-  default     = "0be053a2-e2b4-4952-ba4d-56cbca99a0a0"
+  default     = "cb0a6851-9a44-4974-b524-2e9113de3a80"
 }
 
 variable "enable_ddos_protection" {
