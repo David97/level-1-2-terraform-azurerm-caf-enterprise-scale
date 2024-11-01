@@ -1,0 +1,9 @@
+output "configuration" {
+  description = "Configuration settings for the \"connectivity\" resources."
+  value       = local.configure_connectivity_resources
+}
+
+output "" {
+  description = "Subscription ID for the \"connectivity\" resources."
+  value       = var.subscription_id_connectivity
+}
