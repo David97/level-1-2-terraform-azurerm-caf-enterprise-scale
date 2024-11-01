@@ -25,5 +25,5 @@ variable "primary_location" {
 
 variable "secondary_location" {
   description = "secondary hub"
-  default     = "eastus"
+  default     = "eastasia"
 }
