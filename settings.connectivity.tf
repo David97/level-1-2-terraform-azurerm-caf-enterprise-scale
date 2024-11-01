@@ -23,7 +23,9 @@ locals {
       link_to_ddos_proteciton_plan = {
         enabled = var.enable_ddos_protection
       }
-      dns = {}
+      dns = {
+        enabled = false
+      }
     }
     location = var.primary_location
   }
